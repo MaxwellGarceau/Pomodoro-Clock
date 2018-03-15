@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock (Final)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pomodoro Clock</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Exo+2|Kanit|Krona+One|Mina|Nanum+Gothic|Play" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Pomodoro Clock</h1>
+    <div class="well" id="click-to-start">
+        <div id="clock" class="middle">
+            25:00
+        </div>
+        <p class="pom-description" id="click-here-text">Click Here To Start</p>
+    </div>
+    <h4>Break</h4>
+    <div id="pom-break" class="well">
+        5:00
+    </div>
+    <!--Clock Length-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <div id="clock-length">
+                    <h4>Adjust Pomodoro <br> Length</h4>
+                    <button type="button" id="clock-length-up">+</button>
+                    <button type="button" id="clock-length-down">-</button>
+                </div>
+            </div>
+            <!--Break Length-->
+            <div class="col-xs-6">
+                <div id="break-length">
+                    <h4>Adjust Break <br> Length</h4>
+                    <button type="button" id="break-length-up">+</button>
+                    <button type="button" id="break-length-down">-</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Pause-->
+    <div>
+        <button type="button" class="pause-reset-button" id="pauseResume">Pause</button>
+        <!--Resume-->
+        <button type="button" class="pause-reset-button" id="reset">Reset</button>
+    </div>
+    <audio src="https://dl.dropboxusercontent.com/s/3fuyoio94vlb0mt/analog-watch-alarm_daniel-simion_1.mp3?dl=0" id="pom-sound"></audio>
+    <audio src="https://dl.dropboxusercontent.com/s/2rhqxhvorijmtgv/Jetsens%20Back%20To%20Work.mp3?dl=0" id="break-sound"></audio>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/systemjs-plugin-json/0.3.0/json.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
